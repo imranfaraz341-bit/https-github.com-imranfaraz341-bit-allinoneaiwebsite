@@ -1,0 +1,8 @@
+{
+  "name": "Ahmar Technologies Suite",
+  "description": "A comprehensive suite of creative and utility tools powered by React, Three.js, and Google Gemini.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
