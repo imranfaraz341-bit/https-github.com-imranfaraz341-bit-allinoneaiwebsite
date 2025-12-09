@@ -12,14 +12,20 @@
         height: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: #0f172a; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #cbd5e1; 
+        background: #334155; 
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8; 
+        background: #475569; 
+      }
+      .neon-text {
+        text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+      }
+      .neon-box {
+        box-shadow: 0 0 15px rgba(139, 92, 246, 0.15);
       }
     </style>
   <script type="importmap">
@@ -35,7 +41,7 @@
 }
 </script>
 </head>
-  <body class="bg-slate-50 text-slate-900 antialiased">
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
     <div id="root"></div>
   </body>
 </html>

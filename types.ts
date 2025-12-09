@@ -7,14 +7,18 @@ export interface User {
 export type ViewState = 
   | 'home' 
   | 'dashboard' 
+  | 'projects'
   | 'bgremover' 
   | 'camera' 
-  | 'three' 
+  | 'ai-char' 
   | 'house' 
   | 'assistant' 
-  | 'logo' 
   | 'baby' 
-  | 'builder';
+  | 'builder'
+  | 'ai-logo'
+  | 'ai-wall'
+  | 'ai-video'
+  | 'image-editor';
 
 export interface ChatMessage {
   id: string;
@@ -30,4 +34,14 @@ export interface ToolDef {
   label: string;
   desc: string;
   color: string;
+}
+
+export interface GeneratedAsset {
+  id: string;
+  type: 'image' | 'video' | 'code';
+  url?: string; // For images/videos
+  content?: string; // For code
+  prompt: string;
+  title: string;
+  createdAt: number;
 }
